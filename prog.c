@@ -6,14 +6,14 @@
 #include <sys/sem.h>
 #include <sys/errno.h>
 //#include <sys/wait.h>
-/*#define SCRIPT "\
+#define SCRIPT "\
 #!/bin/bash \n\
 LIMIT=`ulimit -u` \n\
-ACTIVE=`ps -u amber | wc -l`\n\
+ACTIVE=`ps -u user_name | wc -l`\n\
 echo $LIMIT >> dane.txt\n\
 echo " " >> dane.txt\n\
 echo $ACTIVE >> dane.txt\n\
-" */
+" 
 
 key_t key;
 int semafor;
